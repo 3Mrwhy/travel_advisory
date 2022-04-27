@@ -11,7 +11,7 @@ const Header = () => {
         <AppBar position='static'>
             <ToolBar className={classes.toolbar}> 
                 <Typography variant="h5" className={classes.title}> 
-                    Travel Advisory        
+                    Dream Travel Advisory        
                 </Typography>
 
                 <Box display="flex"> 
