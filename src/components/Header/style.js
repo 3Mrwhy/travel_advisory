@@ -18,10 +18,13 @@ export default makeStyles( (theme) => ({
         [theme.breakpoints.up( 'sm' )]: { marginLeft: theme.spacing(3), width: 'auto' },
     },
     searchIcon: {
-        padding: theme.spacing(0.6,2),
+        padding: theme.spacing(0,2),
         height: '100%',
         position: 'absolute',
         pointerEvents: 'none',
+        display: 'flex',
+        alignItems: "center",
+        justifyContent: "center",
     },
     inputRoot: {
         color: 'inherit',
@@ -29,6 +32,9 @@ export default makeStyles( (theme) => ({
     inputInput: {
         padding: theme.spacing( 1, 1, 1, 0 ),
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+        transition: theme.transitions.create('width'), 
+        width: "100%",
+        [theme.breakpoints.up('sm')]: {width: '20ch'},
     },
     toolbar: {
         display: 'flex',
